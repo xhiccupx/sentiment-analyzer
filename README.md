@@ -24,7 +24,7 @@ systems.
   - [x] To show reputation of task categories
   - [x] Accounts that have series of negative feedbacks so supervisors can follow up
 with them using different mechanisms
-## Sentiment Analysis  :smile: :relieved: :anguished: :open_mouth::grimacing: :confused: :hushed: :expressionless::unamused::sweat_smile::sweat::disappointed_relieved:
+## Sentiment Analysis
 Sentiment analysis is the use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information.
 Helping a business to understand the social sentiment of their brand, product or service while monitoring online conversations. 
 ### Flow diagram
