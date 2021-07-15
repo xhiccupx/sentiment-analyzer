@@ -29,4 +29,11 @@ Sentiment analysis is the use of natural language processing, text analysis, com
 Helping a business to understand the social sentiment of their brand, product or service while monitoring online conversations. 
 ### Flow diagram
 ![image](https://user-images.githubusercontent.com/42908255/124773040-3427b400-df5a-11eb-8eee-271a240b85e4.png)
+# technologies used
+* fromt-end - html/css/js
+* back-end - flask(python3)
+* database - SQLite 
+* machine learning algorithms tested for sentiment analysis - logistic regression, decison tree, xgboost and naive bayes 
+* machine learning algorithms tested for emotional analysis - LSTM+GLOVE, ROBERTA, ALBERT
+* machine learning algorithms used after performance analysis - naive bayse and ALBERT
 
