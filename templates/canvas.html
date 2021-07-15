@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curves and Representation</title>
+    <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='img/MAP-Favicon.png')}}">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url(https://sentiment-analysis-web-app.herokuapp.com/static/img/bg.jpg);
+            background-position: center;
+            font-family: "Arial Rounded MT Bold";
+        }
+
+        .canvas {
+            border: 2px solid #444444;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 90%;
+            height: 300px;
+            margin: auto;
+        }
+
+        #head {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            color: #fff;
+        }
+
+        .nav {
+            text-align: center;
+            font-family: "Arial Rounded MT Bold";
+            float: right;
+            align-items: center;
+        }
+
+        .nav ul {
+            list-style: none;
+        }
+
+        .nav ul li {
+            display: inline-block;
+            margin: 13px
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px;
+            margin: 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+        }
+
+        .nav ul li a.active {
+            background: #fff;
+            color: #404040;
+        }
+
+        .nav ul li a:hover {
+            background: #fff;
+            color: #404040;
+        }
+
+        hr {
+            border: 1px solid #fff;
+            margin: 5px;
+        }
+
+        .da {
+            width: 90%;
+            margin: auto;
+        }
+
+        .data {
+            border: 2px solid white;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        @media only screen and (max-width: 583px) {
+            .nav {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class=nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a class="active" href="/about">About</a></li>
+            </ul>
+        </div>
+        <br>
+        <h1 id="head">Graphs&nbspand&nbspCurves</h1><br>
+    </div>
+    <hr><br>
+    <center style="color: #fff;">
+        <h2>Subjectivity and Polarity</h2><br><br><br>
+    </center>
+    <div class='canvas' id="subjectivity"></div><br><br>
+    <div class='canvas' id="polarity"></div><br><br>
+    <div class='canvas' id="posneg"></div><br><br>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script>
+        window.onload = subject();
+        window.onload = polar();
+        window.onload = posneg();
+        function subject() {
+            var chart = new CanvasJS.Chart("subjectivity", {
+                animationEnabled: true,
+                theme: "light2",
+                title: {
+                    text: "Subjectivity Curve"
+                },
+                data: [{
+                    type: "line",
+                    indexLabelFontSize: 16,
+                    dataPoints: [
+                        {% for data in value1 %}
+                            { y: {{ data }} },
+                        {% endfor %}
+                    ]
+                }]
+            });
+        chart.render();
+        }
+        function polar() {
+            var chart = new CanvasJS.Chart("polarity", {
+                animationEnabled: true,
+                theme: "light2",
+                title: {
+                    text: "Polarity Curve"
+                },
+                data: [{
+                    type: "line",
+                    indexLabelFontSize: 16,
+                    dataPoints: [
+                        {% for data in value2 %}
+                            { y: {{ data }} },
+                        {% endfor %}
+                    ]
+                }]
+            });
+        chart.render();
+        }
+
+        function posneg() {
+
+            var chart = new CanvasJS.Chart("posneg", {
+                animationEnabled: true,
+                theme: "light2", // "light1", "light2", "dark1", "dark2"
+                title: {
+                    text: "Positive and Negative count"
+                },
+                axisY: {
+                    title: "Sentence counts"
+                },
+                data: [{
+                    type: "column",
+                    showInLegend: true,
+                    legendMarkerColor: "grey",
+                    legendText: "Sentiment",
+                    dataPoints: [
+                        { y: {{ pos }}, label: "Positive" },
+                        { y: {{ neg }}, label: "Negative" }
+                    ]
+                }]
+            });
+        chart.render();
+        }
+    </script>
+</body>
+
+</html>

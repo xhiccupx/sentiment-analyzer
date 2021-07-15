@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.b {
+  border: 1px solid red;
+}
+.g-left {
+  margin-right: auto;
+}
+.g-right {
+  margin-left: auto;
+}
+
+
+
+
+
+
+header {
+  width: 100%;
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 20px;
+  height: 75px;
+  align-items: flex-end;
+  background-color: #F6F6F6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  font-family: 'Roboto',sans-serif;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+header a {
+  text-decoration: none;
+  font-size: 20px;
+}
+#home-link {
+  color: #0061a8;
+  font-weight: 700;
+}
+#home-link:hover {
+  color: #696b6d;
+}
+#about-link {
+  color: #1A2E35;
+  opacity: 0.66;
+}
+#about-link:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+.section-1 {
+  padding: 60px 70px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 150px;
+}
+.section-1-1 p {
+  font-family: 'Roboto',sans-serif;
+  font-size: 22px;
+  width: 90%;
+  margin-bottom: 60px;
+  color: #1A2E35;
+}
+.section-1-1 img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section-1-2 h2 {
+  font-size: 60px;
+  font-family: 'Lato',sans-serif;
+  color: #385A64;
+  margin-bottom: 50px;
+}
+
+.section-1-2 form {
+  width: 80%;
+}
+.section-1-2 .form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Roboto',sans-serif;
+  margin-bottom: 30px;
+}
+.section-1-2 .form-group label {
+  color: #0061a8;
+  font-size: 16px;
+}
+.section-1-2 .form-group input {
+  width: 100%;
+  border: none;
+  padding: 15px 25px;
+  background: #F5F5F5;
+  margin-top: 8px;
+}
+.section-1-2 .form-group select {
+  width: 100%;
+  border: none;
+  padding: 15px 25px;
+  background: #F5F5F5;
+  margin-top: 8px;
+}
+
+.section-1-2 .form-group textarea {
+  width: 100%;
+  border: none;
+  padding: 15px 25px;
+  background: #F5F5F5;
+  margin-top: 8px;
+}
+.section-1-2 .form-group button {
+  font-size: 18px;
+  padding: 12px 40px;
+  color: white;
+  border: none;
+  background-color: #0061a8;
+}
+.section-1-2 .form-group button:hover {
+  background-color: #0061a8;
+}
+
+
+
+
+.results {
+  width: 80%;
+  background-color: #F6F6F6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px 25px;
+  font-family: 'Roboto',sans-serif;
+}
+.results span {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+.results h3 {
+  font-size: 50px;
+  color: #0061a8;
+  font-size: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+  .section-1-2 form {
+    width: 100%;
+  }
+  .results {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .section-1-1 p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width:950px) {
+  .section-1-2 h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+  .section-1-2 .form-group label {
+    font-size: 14px;
+  }
+  header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .section-1 {
+    padding: 50px 50px;
+    padding-top: 120px;
+  }
+}
+@media only screen and (max-width:770px) {
+  header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-1 {
+    padding: 50px 30px;
+    padding-top: 120px;
+    grid-template-columns: 100%;
+  }
+  .section-1-1 img {
+    width: 100%;
+  }
+  .section-1-1 p {
+    width: 100%;
+  }
+  .section-1-1 {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width:510px) {
+  header a{
+    font-size: 18px;
+  }
+  .section-1-1 p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .section-1-2 h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  header a{
+    font-size: 16px;
+  }
+  .section-1-1 p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .section-1-2 h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 65px;
+    padding-bottom: 15px;
+  }
+  .section-1 {
+    padding: 50px 20px;
+    padding-top: 100px;
+  }
+  .section-1-2 .form-group label {
+    font-size: 12px;
+  }
+  .section-1-2 .form-group button {
+    font-size: 16px;
+  }
+  .results span {
+    font-size: 14px;
+  }
+  .results h3 {
+    font-size: 40px;
+  }
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+body, html {
+  height: 100%;
+  font-size: 20px;
+  font-family: Source Sans Pro;
+}
+
+.b, .bb {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("https://i.imgur.com/kje4L5j.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.bb {
+  background: url("https://i.imgur.com/bDBs0et.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+
+#go {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: white;
+  border: 0;
+  background: #71c341;
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+  outline: none;
+}
+#go:hover {
+  background: #8ecf68;
+}
+#go:active {
+  background: #5a9f32;
+}
+
+.message {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 300px;
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  font-weight: 300;
+  color: #2c2928;
+  opacity: 0;
+  transition: top 0.3s cubic-bezier(0.31, 0.25, 0.5, 1.5), opacity 0.2s ease-in-out;
+}
+.message .check {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(4);
+  width: 120px;
+  height: 110px;
+  background: #71c341;
+  color: white;
+  font-size: 3.8rem;
+  padding-top: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: transform 0.2s 0.25s cubic-bezier(0.31, 0.25, 0.5, 1.5), opacity 0.1s 0.25s ease-in-out;
+}
+.message .scaledown {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+.message p {
+  font-size: 1.1rem;
+  margin: 25px 0px;
+  padding: 0;
+}
+.message p:nth-child(2) {
+  font-size: 2.3rem;
+  margin: 40px 0px 0px 0px;
+}
+.message #ok {
+  position: relative;
+  color: white;
+  border: 0;
+  background: #71c341;
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  transition: background 0.2s ease;
+  outline: none;
+}
+.message #ok:hover {
+  background: #8ecf68;
+}
+.message #ok:active {
+  background: #5a9f32;
+}
+
+.comein {
+  top: 150px;
+  opacity: 1;
+}

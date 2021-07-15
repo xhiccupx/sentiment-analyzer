@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Database</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='img/MAP-Favicon.png')}}">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">User Submitted Data</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table table-bordered table-dark table-hover">
+						  <thead>
+						    <tr>
+						      <th>Name</th>
+        					<th>Email</th>
+        					<th>Department</th>
+        					<th>Feedback</th>
+        					<th>Sentiment</th>
+        					<th>Changed Sentiment</th>
+        					<th>Action</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    {%- for i in all %}
+					      <tr>
+					        <td>{{i.name}}</td>
+					        <td>{{i.email}}</td>
+					        <td>{{i.department}}</td>
+					        <td>{{i.Text}}</td>
+					        <td>{{i.Sentiment}}</td>
+					        <td>{{i.Change}}</td>
+					        <td> <a href="/delete-data/{{i.Id}}/">DELETE</a> </td>
+					      </tr>
+      					{%- endfor %}
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+	  function checkdelete()
+	  {
+	    return confirm('Are you sure you want to delete this record?');
+	  }
+	</script>
+
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/popper.js')}}"></script>
+  <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/main2.js')}}"></script>
+
+	</body>
+</html>
