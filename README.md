@@ -29,3 +29,4 @@ Sentiment analysis is the use of natural language processing, text analysis, com
 Helping a business to understand the social sentiment of their brand, product or service while monitoring online conversations. 
 ### Flow diagram
 ![image](https://user-images.githubusercontent.com/42908255/124773040-3427b400-df5a-11eb-8eee-271a240b85e4.png)
+
