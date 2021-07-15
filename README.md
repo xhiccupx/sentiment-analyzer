@@ -45,14 +45,16 @@ Helping a business to understand the social sentiment of their brand, product or
 # Agent's UI
 ![Screenshot (2274)](https://user-images.githubusercontent.com/65475955/125712653-75593070-ba89-4dcb-9c07-f7f42cdb29df.png)
 ![Screenshot (2275)](https://user-images.githubusercontent.com/65475955/125712658-6ae52455-e7c1-439b-af2c-f8a29e8f39b6.png)
-![Screenshot (2276)](https://user-images.githubusercontent.com/65475955/125712672-f1038816-0470-49fd-9ae8-ba5a45e43803.png)
-# Trends
-![Screenshot (2277)](https://user-images.githubusercontent.com/65475955/125712675-e2558161-68b0-40b9-b29a-ead4fb3306b6.png)
-# Charts
-![Screenshot (2278)](https://user-images.githubusercontent.com/65475955/125712679-60267fd7-f46d-49ab-91f3-9c517f846480.png)
-![Screenshot (2279)](https://user-images.githubusercontent.com/65475955/125712686-d1eb8fcd-1784-4a65-8a97-e442d62b452a.png)
 # Emotional Analysis
 ![Screenshot (2280)](https://user-images.githubusercontent.com/65475955/125712699-e4713729-c311-47d6-aa4b-9150917d80f8.png)
+# Trends
+![Screenshot (2276)](https://user-images.githubusercontent.com/65475955/125712672-f1038816-0470-49fd-9ae8-ba5a45e43803.png)
+# Charts
+![Screenshot (2277)](https://user-images.githubusercontent.com/65475955/125712675-e2558161-68b0-40b9-b29a-ead4fb3306b6.png)
+![Screenshot (2278)](https://user-images.githubusercontent.com/65475955/125712679-60267fd7-f46d-49ab-91f3-9c517f846480.png)
+# Users
+![Screenshot (2279)](https://user-images.githubusercontent.com/65475955/125712686-d1eb8fcd-1784-4a65-8a97-e442d62b452a.png)
+
 
 
 
